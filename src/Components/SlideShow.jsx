@@ -47,14 +47,14 @@ const Images= [
 const SlideShow = () => {
   const nav=useNavigate()
   return (
-    <div className='w-[100%] h-[500px] text-center text-black' name="slideshow">
+    <div className=' text-center text-black' name="slideshow">
    
     <Slide autoplay={true} indicators={false} transitionDuration={300} canSwipe={false} >
      {Images.map((slideImage, index)=> (
         <div className="each-slide " key={index} >
           <div className="flex gap-1 flex-col md:flex-row xs:flex">
-                    <div className='flex-1'>
-                        <img src={slideImage.src} alt="images" width="100%" height="100%"/>
+                    <div className='flex-1 w-[100%] md:h-[500px] h-[300px]'>
+                        <img src={slideImage.src} alt="images" className='w-full h-full'/>
                     </div>
                     <div className='flex-1 flex justify-center items-center' style={{backgroundColor:slideImage.color}}>
                         <div>

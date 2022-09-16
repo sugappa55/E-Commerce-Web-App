@@ -18,7 +18,7 @@ const Carousel = () => {
     }
   return (
     <div className='p-4 md:p-12' >
-        <div className='text-center p-16'>
+        <div className='text-center md:p-16 p-20'>
             <p className='text-3xl uppercase font-bold tracking-tight'>BestSelllers</p>
             <p>Choose your style</p>
         </div>
@@ -27,11 +27,11 @@ const Carousel = () => {
         <div id="slider" className="w-full h-full overflow-x-scroll  whitespace-nowrap scroll-smooth scrollbar-hide">
                 {
                     data?.slice(0,5).map(e=>(
-                       <div key={e.id} className=' w-[75vw] h-90 md:w-[35vw] lg:w-[22vw] md:h-64 inline-block cursor-pointer' onClick={()=>navigate(`/single/${e.id}`)}>
+                       <div key={e.id} className=' w-[75vw] h-[80vh] md:w-[35vw] lg:w-[22vw] md:h-64 inline-block cursor-pointer' onClick={()=>navigate(`/single/${e.id}`)}>
 
                         <img src={e.images[0]} alt="" className='w-full h-[70%]' />
                         <div className=' p-6 md:p-4 text-center'>
-                            <p className='text-sm'>{e.name}{" | "}{e.color}{" | "}{e.gender}</p>
+                            <p className='text-xs'>{e.name}{" | "}{e.color}{" | "}{e.gender}</p>
                             <p className='text-red-500'>Rs.{e.final_price}</p>
                         </div>
                        </div>
