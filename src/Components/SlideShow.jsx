@@ -42,6 +42,8 @@ const Images= [
    }
 ]
 
+/* A function that returns a slideshow component. */
+
 const SlideShow = () => {
   const nav=useNavigate()
   return (

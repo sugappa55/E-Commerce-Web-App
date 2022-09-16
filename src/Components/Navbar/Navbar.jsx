@@ -23,6 +23,10 @@ const navItems = [ 'Women', 'Men',"New","Classic","About","Help"];
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
+ /**
+  * When the drawer is open, clicking the hamburger icon will close the drawer. When the drawer is
+  * closed, clicking the hamburger icon will open the drawer.
+  */
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -58,8 +62,8 @@ export default function Navbar() {
       <AppBar component="nav" style={{backgroundColor:"white",pdding:0,height:"4rem"}}>
         <Toolbar>
           
-          <IconButton sx={{display:{md:"none"}}}>
-          <IoMenuOutline className=' text-3xl mr-3 text-black' onClick={handleDrawerToggle}/>
+          <IconButton sx={{display:{md:"none"}}} onClick={handleDrawerToggle}>
+          <IoMenuOutline className=' text-3xl mr-3 text-black' />
 
           </IconButton>
           <BsSearch className='text-xl text-black md:hidden '/>

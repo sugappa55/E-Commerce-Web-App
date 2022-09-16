@@ -19,6 +19,7 @@
     "react-slideshow-image": "^3.7.5",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -26,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve-json": "json-server db.json --port 8080 --watch"
+    "serve-json": "json-server db.json --port 9090 --watch"
   },
   "eslintConfig": {
     "extends": [
