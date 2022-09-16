@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SingleEntity = () => {
+const Login = () => {
   return (
     <div>
-      single
+      
     </div>
   )
 }
 
-export default SingleEntity
+export default Login

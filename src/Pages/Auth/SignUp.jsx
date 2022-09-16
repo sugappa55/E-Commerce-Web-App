@@ -1,11 +1,13 @@
 import React from 'react'
 
-const SingleEntity = () => {
+const SignUp = () => {
   return (
     <div>
-      single
+      
     </div>
   )
 }
 
-export default SingleEntity
+export default SignUp
+
+
