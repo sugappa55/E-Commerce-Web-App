@@ -68,7 +68,7 @@ export default function Navbar() {
           <Typography
             variant="h6"
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' },m:{sm:"auto",md:0},ml:{md:8},p:0 }}
+            sx={{ display: { xs: 'block', sm: 'block' },m:{xs:"auto",md:0},ml:{md:8},p:0 }}
           >
             <img src={Logo} alt="Logo" />
           </Typography>
