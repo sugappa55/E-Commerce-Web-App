@@ -3,11 +3,11 @@ import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image'
 import {useNavigate} from "react-router-dom"
 
-import Image1 from "../Assests/SlideShowImages/Banana_banner1.webp"
-import Image2 from "../Assests/SlideShowImages/FH_Banner3jpg_41cafa8d-1e9b-4545-9cd6-fa20b38961b0.webp"
-import Image3 from "../Assests/SlideShowImages/KoolTex_banner2.webp"
-import Image4 from "../Assests/SlideShowImages/Linen_banner2.webp"
-import Image5 from "../Assests/SlideShowImages/Softknit_banner1.webp"
+import Image1 from "../../../Assests/SlideShowImages/Banana_banner1.webp"
+import Image2 from "../../../Assests/SlideShowImages/FH_Banner3jpg_41cafa8d-1e9b-4545-9cd6-fa20b38961b0.webp"
+import Image3 from "../../../Assests/SlideShowImages/KoolTex_banner2.webp"
+import Image4 from "../../../Assests/SlideShowImages/Linen_banner2.webp"
+import Image5 from "../../../Assests/SlideShowImages/Softknit_banner1.webp"
 
 const Images= [
   {

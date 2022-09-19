@@ -3,12 +3,13 @@ import { useDispatch } from "react-redux";
 import {Route,Routes} from "react-router-dom"
 import Navbar from "./Components/Navbar/Navbar";
 import { NotFound } from "./Components/NotFound";
-import AllEntities from "./Pages/AllEntities";
-import Login from "./Pages/Auth/Login";
-import SignUp from "./Pages/Auth/SignUp";
-import Cart from "./Pages/Cart";
-import HomePage from "./Pages/HomePage";
-import SingleEntity from "./Pages/SingleEntity";
+import AllEntities from "./Pages/AllEntities/AllEntities";
+import Cart from "./Pages/Cart/Cart";
+import HomePage from "./Pages/HomePage/HomePage";
+import SingleEntity from "./Pages/SingleEntity/SingleEntity"
+import Login from "./Pages/Auth/Login"
+import SignUp from "./Pages/Auth/SignUp"
+
 import { GetData } from "./Redux/Actions";
 
 function App() {

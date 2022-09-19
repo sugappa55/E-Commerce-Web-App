@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from "react";
 
 import {useDispatch, useSelector} from "react-redux"
-import {GetData} from "../Redux/Actions"
+import {GetData} from "../../Redux/Actions"
 
 const AllEntities = () => {
   let dispatch=useDispatch()

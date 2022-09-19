@@ -1,6 +1,6 @@
 import React from 'react'
-import Carousel from '../Components/Carousel'
-import SlideShow from '../Components/SlideShow'
+import Carousel from './Sections/Carousel'
+import SlideShow from './Sections/SlideShow'
 
 const HomePage = () => {
   return (

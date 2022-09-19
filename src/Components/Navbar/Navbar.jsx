@@ -75,7 +75,7 @@ export default function Navbar() {
           >
             <img src={Logo} alt="Logo" />
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'none',md:"block" },mx:{md:"12vw"} }} >
+          <Box sx={{ display: { xs: 'none', sm: 'none',md:"block" },mx:{md:"5vw"} }} >
             <Button sx={{color:"black",fontWeight:"bold"}}><Link to="/collections/all">Shop</Link></Button>
             {navItems.map((item,index) => (
               <Button key={item} disableFocusRipple  sx={{ color: 'black',fontWeight:"bold",ml:1.5 }}>
@@ -83,7 +83,7 @@ export default function Navbar() {
               </Button>
             ))}
           </Box>
-         <div className='text-black flex text-xl  gap-6 xl:gap-12 justify-end items-center md:ml-[12vw]'>
+         <div className='text-black flex text-xl  gap-6 xl:gap-12 justify-end items-center md:ml-[8vw] 2xl:ml-[12vw]'>
                     <Link to="/"><BsSearch className='text-xl md:block hidden'/></Link>
                    <Link to="/login">
                     <IoPersonOutline className='text-xl md:block hidden'/>

@@ -31,8 +31,8 @@ const Carousel = () => {
 
                         <img src={e.images[0]} alt="" className='w-full h-[70%] object-cover' />
                         <div className=' p-6 md:p-4 text-center mt-4'>
-                            <p className='text-xs'>{e.name}{" | "}{e.color}{" | "}{e.gender}</p>
-                            <p className='text-red-500'>Rs.{e.final_price}</p>
+                            <p className='md:text-xs text-xl'>{e.name}{" | "}{e.color}{" | "}{e.gender}</p>
+                            <p className='text-red-500 md:text-xs text-xl'>Rs.{e.final_price}</p>
                         </div>
                        </div>
                     ))
