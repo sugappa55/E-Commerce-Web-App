@@ -19,4 +19,4 @@ const EntityCard = ({product}) => {
   )
 }
 
-export default EntityCard
+export default React.memo(EntityCard)

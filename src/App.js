@@ -1,40 +1,42 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import {Route,Routes} from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
+import Footer from "./Components/Footer";
+import Loader from "./Components/Loader";
 import Navbar from "./Components/Navbar/Navbar";
-import { NotFound } from "./Components/NotFound";
-import AllEntities from "./Pages/AllEntities/AllEntities";
-import Cart from "./Pages/Cart/Cart";
-import HomePage from "./Pages/HomePage/HomePage";
-import SingleEntity from "./Pages/SingleEntity/SingleEntity"
-import Login from "./Pages/Auth/Login"
-import SignUp from "./Pages/Auth/SignUp"
-
 import { GetData } from "./Redux/Actions";
 
-function App() {
-  let dispatch=useDispatch()
-  useEffect(()=>{
-    let unSubscribe=()=>dispatch(GetData())
-    return ()=>unSubscribe()
-  },[dispatch])
-  
-  
-  return (
-    <div>
-    <Navbar/>
-    <Routes>
-    <Route path="/" element={<HomePage/>}/>
-    <Route path="/collections/all" element={<AllEntities/>}/>
-    <Route path="/usercart" element={<Cart/>}/>
-    <Route path="/single/:id" element={<SingleEntity/>}/>
-    <Route path="/login" element={<Login/>}/>
-    <Route path="/signup" element={<SignUp/>}/>
-    <Route path='*' exact={true} element={<NotFound/>} />
+const NotFound=React.lazy(()=>import('./Components/NotFound'))
+const AllEntities=React.lazy(()=>import('./Pages/AllEntities/AllEntities'))
+const Cart=React.lazy(()=>import('./Pages/Cart/Cart'))
+const HomePage=React.lazy(()=>import('./Pages/HomePage/HomePage'))
+const SingleEntity=React.lazy(()=>import('./Pages/SingleEntity/SingleEntity'))
+const Login=React.lazy(()=>import('./Pages/Auth/Login'))
+const SignUp=React.lazy(()=>import('./Pages/Auth/SignUp'))
 
-    
-    </Routes>
-    </div>
+function App() {
+  let dispatch = useDispatch();
+  useEffect(() => {
+    let unSubscribe = () => dispatch(GetData());
+    return () => unSubscribe();
+  }, [dispatch]);
+
+  return (
+    <>
+      <Navbar />
+      <React.Suspense fallback={<Loader/>}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/collections/all" element={<AllEntities />} />
+        <Route path="/usercart" element={<Cart />} />
+        <Route path="/single/:id" element={<SingleEntity />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="*" exact={true} element={<NotFound />} />
+      </Routes>
+      </React.Suspense>
+      <Footer/>
+    </>
   );
 }
 

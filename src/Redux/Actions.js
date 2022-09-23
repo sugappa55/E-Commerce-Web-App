@@ -1,4 +1,4 @@
-import { api } from "../Helpers/api"
+import { api } from "../utils/api"
 //ACTION TYPES
 
 

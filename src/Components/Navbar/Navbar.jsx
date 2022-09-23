@@ -20,7 +20,7 @@ import { IconButton } from '@mui/material';
 const drawerWidth = 240;
 const navItems = [ 'Women', 'Men',"New","Classic","About","Help"];
 
-export default function Navbar() {
+ function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
  /**
@@ -122,3 +122,4 @@ export default function Navbar() {
     </div>
   );
 }
+export default React.memo(Navbar)
