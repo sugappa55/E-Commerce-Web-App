@@ -7,6 +7,8 @@ import {
   Typography,
 } from "@mui/material";
 import { MdExpandMore } from "react-icons/md";
+import {AiOutlineTwitter,AiFillYoutube,AiFillLinkedin,AiOutlineInstagram,AiFillMail} from "react-icons/ai"
+import {FaFacebook} from "react-icons/fa"
 const Footer = () => {
   return (
     <div className="bg-[#fafafa]">
@@ -65,15 +67,7 @@ const Footer = () => {
           </Typography>
         </div>
       </div>
-      <div className="border  mx-8 border-black"></div>
-      <div className="flex gap-2 mx-8 p-4">
-        <div className="flex-1">@2022 Flatheads</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      
 
       <div className="md:hidden p-2">
         <div>
@@ -164,6 +158,18 @@ const Footer = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
+        </div>
+      </div>
+      <div className="border  mx-8 border-black hidden md:block"></div>
+      <div className="flex mx-8 py-4">
+        <div className="flex-1 hidden md:block">@2022 Flatheads</div>
+        <div className="flex justify-center md:justify-end gap-6 w-full">
+        <div className="footer-icon"><AiOutlineTwitter/></div>
+        <div className="footer-icon"><FaFacebook/></div>
+        <div className="footer-icon"><AiFillYoutube/></div>
+        <div className="footer-icon"><AiOutlineInstagram/></div>
+        <div className="footer-icon"><AiFillLinkedin/></div>
+        <div className="footer-icon"><AiFillMail/></div>
         </div>
       </div>
     </div>

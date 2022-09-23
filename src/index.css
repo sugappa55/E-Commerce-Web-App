@@ -8,6 +8,10 @@
 .btn{
     @apply px-6 py-2 uppercase text-black bg-yellow-400 tracking-[3px] rounded-lg font-bold m-2 md:m-6 text-xs
 }
+
+.footer-icon{
+    @apply rounded-[50%] h-8 w-8 bg-gray-600 text-white text-xl hover:bg-black flex justify-center items-center
+}
 body{
     font-family: 'Poppins'sans-serif;
 }
