@@ -5,6 +5,7 @@ import BgImage2 from "../../../Assests/ShowImages/Smart_design-02.webp";
 import BgImage3 from "../../../Assests/ShowImages/Supreme_comfort-03.webp";
 import BgImage4 from "../../../Assests/ShowImages/Ultra_Lightweight_5.webp";
 import BgImage5 from "../../../Assests/ShowImages/Environment_friendly-04.webp";
+import { Link } from "react-router-dom";
 
 let bgImages = [
   { img: BgImage1, name: "Innovative Materials" },
@@ -34,7 +35,9 @@ const AbouFlatHeads = () => {
               </div>
             ))}
             <div className="flex justify-center items-center ">
-              <button className="btn">Learn more</button>
+              <Link to="/collections/all">
+                <button className="btn">Learn more</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -49,7 +52,9 @@ const AbouFlatHeads = () => {
             meet-ups, our shoes are crafted to fit every aesthetic.
           </p>
           <div className="flex items-center justify-end">
-            <button className="btn">Learn more</button>
+            <Link to="/collections/all">
+              <button className="btn">Learn more</button>
+            </Link>
           </div>
         </div>
       </div>
