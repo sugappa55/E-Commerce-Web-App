@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const Carousel = () => {
   const navigate = useNavigate();
   const data = useSelector((store) => store.products);
-  console.log(data);
   const slideLeft = () => {
     let elem = document.getElementById("slider");
     elem.scrollLeft = elem.scrollLeft - 400;

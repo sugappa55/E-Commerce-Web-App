@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
@@ -16,6 +16,8 @@ const SignUp=React.lazy(()=>import('./Pages/Auth/SignUp'))
 
 function App() {
   let dispatch = useDispatch();
+  const data = useSelector((store) => store.products);
+  console.log(data);
   useEffect(() => {
     let unSubscribe = () => dispatch(GetData());
     return () => unSubscribe();
