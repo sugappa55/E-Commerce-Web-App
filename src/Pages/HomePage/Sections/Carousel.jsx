@@ -36,7 +36,7 @@ const Carousel = () => {
           {data?.slice(0, 5).map((e) => (
             <div
               key={e.id}
-              className=" w-[75vw] h-[80vh] md:w-[35vw] lg:w-[22vw] md:h-64 inline-block cursor-pointer md:m-0 mx-4 shadow-inner-md "
+              className=" w-[75vw] h-[80vh] md:w-[35vw] lg:w-[22vw] md:h-64 inline-block cursor-pointer md:m-0 mx-4 shadow-inner-md truncate"
               onClick={() => navigate(`/single/${e.id}`)}
             >
               <img
@@ -45,7 +45,7 @@ const Carousel = () => {
                 className="w-full h-[70%] object-cover"
               />
               <div className=" p-6 md:p-4 text-center mt-4">
-                <p className="md:text-sm text-xl">
+                <p className="md:text-sm text-xl  text-ellipsis overflow-hidden">
                   {e.name}
                   {" | "}
                   {e.color}

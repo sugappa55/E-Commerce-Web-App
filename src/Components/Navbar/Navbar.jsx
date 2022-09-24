@@ -15,13 +15,14 @@ import {BsChevronDown,BsSearch,BsBasket3} from "react-icons/bs"
 import {IoPersonOutline,IoMenuOutline} from "react-icons/io5"
 import {AiOutlineClose} from "react-icons/ai"
 import {GrNext} from "react-icons/gr"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 const drawerWidth = 240;
 const navItems = [ 'Women', 'Men',"New","Classic","About","Help"];
 
  function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const navigate=useNavigate()
 
  /**
   * When the drawer is open, clicking the hamburger icon will close the drawer. When the drawer is
@@ -73,7 +74,7 @@ const navItems = [ 'Women', 'Men',"New","Classic","About","Help"];
             component="div"
             sx={{ display: { xs: 'block', sm: 'block' },m:{xs:"auto",md:0},ml:{md:6},p:0 }}
           >
-            <img src={Logo} alt="Logo" />
+            <img src={Logo} alt="Logo" className='cursor-pointer' onClick={()=>navigate("/")}/>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'none',md:"block" },mx:{md:"5vw"} }} >
             <Button sx={{color:"black",fontWeight:"bold"}}><Link to="/collections/all">Shop</Link></Button>
