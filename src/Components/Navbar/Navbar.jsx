@@ -18,7 +18,7 @@ import {GrNext} from "react-icons/gr"
 import { Link, useNavigate } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 const drawerWidth = 240;
-const navItems = [ 'Women', 'Men',"New","Classic","About","Help"];
+const navItems = [ 'Women', 'Men',"New!","Classic","About","Help"];
 
  function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -36,7 +36,7 @@ const navItems = [ 'Women', 'Men',"New","Classic","About","Help"];
     <Box onClick={handleDrawerToggle} style={{boxShadow:"none"}} >
       <div className="flex py-2  items-center">
         <div><IoPersonOutline className='mx-2 text-xl'/></div>
-        <div className='font-bold flex-1  text-xl'>Login</div>
+      <div className='font-bold flex-1  text-xl'>  <Link to="/login">Login</Link></div>
         <div onClick={handleDrawerToggle}><AiOutlineClose className='text-xl mr-2'/></div>
       </div>
       <Divider />

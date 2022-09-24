@@ -16,19 +16,23 @@ const products = [
     img: Image2,
     name: "Linen Sneakers",
     description:
-      "Spark conversations with the worlds 1st banana fabric sneakers",
+      "All weather, dual toned linen shoes to make heads turn",
   },
   {
     img: Image3,
     name: "SoftKnit Loafers",
     description:
-      "Spark conversations with the worlds 1st banana fabric sneakers",
+      "Super soft,super stylish. Comfort never looked this chic!",
   },
 ];
 
 const BigCarousel = () => {
   return (
+    <>
+    <h2 className="text-center text-3xl font-semibold uppercase p-6">Worlds First</h2>
     <div className="whitespace-nowrap overflow-x-scroll scrollbar-hide  my-4 ">
+
+
       {products.map((product) => (
         <div
           className="inline-block relative ml-4 truncate h-[70vh] ] md:w-[50vw] lg:w-[40vw] sm:w-[60vw] bg-[#f9f9f9]"
@@ -55,6 +59,7 @@ const BigCarousel = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
