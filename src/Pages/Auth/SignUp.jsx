@@ -54,7 +54,7 @@ const SignUp = () => {
                 Subscribe to News Letter
               </label>
             </div>
-            <div className="md:w-[40vw] lg:w-[30vw] py-2 w-[80vw]">
+            <div className="md:w-[40vw] lg:w-[30vw] py-2 w-[80vw] ">
               <button type="submit" className="form-btn">
                 Sign Up
               </button>
