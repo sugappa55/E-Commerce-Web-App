@@ -69,4 +69,4 @@ const Carousel = () => {
   );
 };
 
-export default React.memo(Carousel);
+export default Carousel;
