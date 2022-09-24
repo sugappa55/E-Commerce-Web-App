@@ -17,6 +17,8 @@
 }
 body{
     font-family: 'Poppins'sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .form-btn{
     @apply h-[3.5rem] w-full rounded-lg text-center text-white hover:bg-white hover:text-black hover:shadow-xl bg-black text-lg tracking-wider font-semibold
