@@ -5,11 +5,9 @@ import {useDispatch, useSelector} from "react-redux"
 import {GetData} from "../../Redux/Actions"
 
 const AllEntities = () => {
-  let dispatch=useDispatch()
-  useEffect(()=>{
-    let unSubscribe=()=>dispatch(GetData())
-    return ()=>unSubscribe()
-  },[dispatch])
+  const data = useSelector((store) => store.products);
+
+  
   return (
     <div>
       all

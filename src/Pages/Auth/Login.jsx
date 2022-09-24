@@ -14,33 +14,33 @@ const Login = () => {
           <form>
             <label
               htmlFor="email"
-              className="text-xl font-bold leading-none text-gray-700"
+              className="text-lg font-bold leading-none text-gray-700"
             >
               Email
             </label>{" "}
             <div className="md:w-[40vw] lg:w-[30vw] py-2 w-[80vw]">
               <input
                 type="email"
-                className="border  h-[3.5rem] w-full rounded-xl border-gray-500 outline-none focus:border-black"
+                className="input-box"
               />
             </div>
             <label
               htmlFor="password"
-              className="text-xl font-bold leading-none text-gray-700"
+              className="text-lg font-bold leading-none text-gray-700"
             >
               Password
             </label>{" "}
             <div className="md:w-[40vw] lg:w-[30vw] py-2 w-[80vw]">
               <input
                 type="password"
-                className="border h-[3.5rem] w-full rounded-xl  border-gray-500 outline-none focus:border-black"
+                className="input-box"
               />
             </div>
             <p className="cursor-pointer">Forgot your password?</p>
             <div className="md:w-[40vw] lg:w-[30vw] py-2 w-[80vw]">
               <button
                 type="submit"
-                className="h-[3.5rem] w-full rounded-lg text-center text-white hover:bg-white hover:text-black hover:shadow-xl bg-black text-lg tracking-wider font-semibold"
+                className="form-btn"
               >
                 Login
               </button>
