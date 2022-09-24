@@ -19,8 +19,8 @@ function App() {
   const data = useSelector((store) => store.products);
   console.log(data);
   useEffect(() => {
-    let unSubscribe = () => dispatch(GetData());
-    return () => unSubscribe();
+     dispatch(GetData());
+    
   }, [dispatch]);
 
   return (

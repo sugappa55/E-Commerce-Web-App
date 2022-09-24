@@ -108,8 +108,8 @@ const AllEntities = () => {
           </div>
           <div className="grid md:grid-cols-3 sm:grid-cols-2 md:w-[75%] w-full gap-2 md:mt-[-3rem]">
             {
-              data.map(product=>(
-                <EntityCard product={product}/>
+              data?.map(product=>(
+                <EntityCard product={product} key={product.id}/>
               ))
             }
           </div>
