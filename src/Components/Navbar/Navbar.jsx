@@ -60,14 +60,14 @@ const navItems = [ 'Women', 'Men',"New!","Classic","About","Help"];
 
   return (
     <div style={{padding:0}} >
-      <AppBar component="nav" style={{backgroundColor:"white",pdding:0,height:"4rem"}}>
+      <AppBar component="nav" style={{backgroundColor:"white",pdding:0,height:"3.5rem"}}>
         <Toolbar>
           
           <IconButton sx={{display:{md:"none"}}} onClick={handleDrawerToggle}>
-          <IoMenuOutline className=' text-3xl mr-3 text-black' />
+          <IoMenuOutline className=' text-3xl sm:mr-3 text-black' />
 
           </IconButton>
-          <BsSearch className='text-xl text-black md:hidden '/>
+          <BsSearch className='text-2xl text-black md:hidden mr-3 '/>
 
           <Typography
             variant="h6"

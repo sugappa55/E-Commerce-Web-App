@@ -9,7 +9,7 @@ const AllEntities = () => {
   const data = useSelector((store) => store.products);
 
   return (
-    <div className="px-16 py-4">
+    <div className="md:px-16 py-4 px-4">
       <div>
         <h2 className="text-3xl font-semibold py-6">Shop All</h2>
         <div id="filter" className="flex md:justify-end justify-between">

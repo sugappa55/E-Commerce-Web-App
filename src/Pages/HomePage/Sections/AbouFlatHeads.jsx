@@ -41,9 +41,9 @@ const AbouFlatHeads = () => {
             </div>
           </div>
         </div>
-        <div className=" flex-1 bg-[url('/src/Assests/ShowImages/bgImage.webp')] p-8 pb-12">
+        <div className=" flex-1 bg-[url('/src/Assests/ShowImages/bgImage.webp')] md:p-8 md:pb-12 p-4 ">
           <h2 className="text-2xl text-center font-semibold">Brand Story</h2>
-          <p className="text-lg p-4">
+          <p className="text-lg md:p-4 p-1">
             Flatheads make shoes for the new generation. We are revolutionizing
             casual footwear through innovative materials and thoughtful design
             that is relevant to your lifestyle. Our shoes are made with natural

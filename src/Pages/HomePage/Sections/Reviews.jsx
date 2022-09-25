@@ -22,7 +22,7 @@ let reviews=[
 
 const Reviews = () => {
   return (
-    <div className='w-full py-24 md:px-28 bg-[#f9f9f9]'>
+    <div className='w-full py-8 md:py-24 md:px-28 bg-[#f9f9f9]'>
        <h2 className='text-3xl font-semibold text-center p-4'>CUSTOMER REVIEWS</h2>
        <div className="overflow-x-scroll whitespace-nowrap scrollbar-hide">
             {

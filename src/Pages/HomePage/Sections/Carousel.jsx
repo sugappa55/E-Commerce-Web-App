@@ -15,8 +15,8 @@ const Carousel = () => {
     elem.scrollLeft = elem.scrollLeft + 400;
   };
   return (
-    <div className="p-4 md:p-12 ">
-      <div className="text-center md:p-16 p-20">
+    <div className="p-2 md:p-12 ">
+      <div className="text-center md:p-16 p-6">
         <p className="text-3xl uppercase font-semibold tracking-tight">
           BestSelllers
         </p>
@@ -26,7 +26,7 @@ const Carousel = () => {
         <MdChevronLeft
           onClick={slideLeft}
           size={40}
-          className="bg-white left-0 rounded-full opacity-50 hover:opacity-100  cursor-pointer z-10"
+          className="left-0 rounded-full opacity-50 hover:opacity-100  cursor-pointer z-10"
         />
         <div
           id="slider"
@@ -35,15 +35,15 @@ const Carousel = () => {
           {data?.slice(0, 5).map((e) => (
             <div
               key={e.id}
-              className=" w-[75vw] h-[80vh] md:w-[35vw] lg:w-[22vw] md:h-64 inline-block cursor-pointer md:m-0 mx-4 shadow-inner-md truncate"
+              className=" w-[75vw] md:w-[35vw] lg:w-[22vw] md:h-64 inline-block cursor-pointer shadow-inner-md"
               onClick={() => navigate(`/single/${e.id}`)}
             >
               <img
                 src={e.images[0]}
                 alt=""
-                className="w-full h-[70%] object-cover"
+                className="w-full md:h-[70%] h-60 object-cover"
               />
-              <div className=" p-6 md:p-4 text-center mt-4">
+              <div className=" p-6 md:p-4 text-center md:my-3">
                 <p className="md:text-sm text-xl  text-ellipsis overflow-hidden">
                   {e.name}
                   {" | "}
@@ -61,7 +61,7 @@ const Carousel = () => {
         <MdChevronRight
           onClick={slideRight}
           size={40}
-          className="bg-white right-0 rounded-full opacity-50 hover:opacity-100 cursor-pointer z-10"
+          className="right-0 rounded-full opacity-50 hover:opacity-100 cursor-pointer z-10"
         />
       </div>
     </div>

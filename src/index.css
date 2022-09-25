@@ -13,7 +13,7 @@
     @apply rounded-[50%] h-8 w-8 bg-gray-600 text-white text-xl hover:bg-black flex justify-center items-center
 }
 .input-box{
-    @apply border  h-[3.5rem] w-full rounded-xl border-gray-500 outline-none focus:border-black
+    @apply border  h-[3rem] md:h-[3.2rem] w-full rounded-xl border-gray-500 outline-none focus:border-black
 }
 body{
     font-family: 'Poppins'sans-serif;
@@ -21,5 +21,5 @@ body{
     padding: 0;
 }
 .form-btn{
-    @apply h-[3.5rem] w-full rounded-lg text-center text-white hover:bg-white hover:text-black hover:shadow-xl bg-black text-lg tracking-wider font-semibold
+    @apply h-[3rem] md:h-[3.2rem] w-full rounded-lg text-center text-white hover:bg-white hover:text-black hover:shadow-xl bg-black text-lg tracking-wider font-semibold
 }
