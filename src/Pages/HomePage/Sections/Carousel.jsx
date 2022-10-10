@@ -16,7 +16,7 @@ const Carousel = () => {
   };
   return (
     <div className="p-2 md:p-12 ">
-      <div className="text-center md:p-16 p-6">
+      <div className="text-center md:p-16 py-4">
         <p className="text-3xl uppercase font-semibold tracking-tight">
           BestSelllers
         </p>

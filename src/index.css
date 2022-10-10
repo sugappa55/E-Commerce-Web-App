@@ -6,8 +6,9 @@
     @apply flex justify-between items-center w-full;
 }
 .btn{
-    @apply px-6 py-2 uppercase text-black bg-yellow-400 tracking-[3px] rounded-lg font-bold m-2 md:m-6 text-xs
+    @apply px-6 py-2 md:py-3 md:px-8 uppercase text-black bg-yellow-400 tracking-[3px] rounded-lg font-bold lg:font-semibold m-2 md:m-6 text-xs md:text-sm xl:text-lg
 }
+
 
 .footer-icon{
     @apply rounded-[50%] h-8 w-8 bg-gray-600 text-white text-xl hover:bg-black flex justify-center items-center
