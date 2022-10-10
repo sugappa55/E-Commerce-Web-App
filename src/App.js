@@ -25,8 +25,11 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <React.Suspense fallback={<Loader/>}>
+     <div>
+     <Navbar />
+     </div>
+     <div className="mt-16">
+     <React.Suspense fallback={<Loader/>}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/collections/all" element={<AllEntities />} />
@@ -38,6 +41,7 @@ function App() {
       </Routes>
       </React.Suspense>
       <Footer/>
+     </div>
     </>
   );
 }

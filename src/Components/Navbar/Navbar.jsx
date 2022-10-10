@@ -60,7 +60,7 @@ const navItems = [ 'Women', 'Men',"New!","Classic","About","Help"];
 
   return (
     <div style={{padding:0}} >
-      <AppBar component="nav" style={{backgroundColor:"white",pdding:0,height:"3.5rem"}}>
+      <AppBar component="nav" style={{backgroundColor:"white",pdding:0,height:"4rem"}}>
         <Toolbar>
           
           <IconButton sx={{display:{md:"none"}}} onClick={handleDrawerToggle}>
@@ -76,7 +76,7 @@ const navItems = [ 'Women', 'Men',"New!","Classic","About","Help"];
           >
             <img src={Logo} alt="Logo" className='cursor-pointer' onClick={()=>navigate("/")}/>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'none',md:"block" },mx:{md:"5vw"} }} >
+          <Box sx={{ display: { xs: 'none', sm: 'none',md:"block" },mx:{md:"5vw",xl:"9vw"} }} >
             <Button sx={{color:"black",fontWeight:"bold"}}><Link to="/collections/all">Shop</Link></Button>
             {navItems.map((item,index) => (
               <Button key={item} disableFocusRipple  sx={{ color: 'black',fontWeight:"bold",ml:1.5 }}>
@@ -84,7 +84,7 @@ const navItems = [ 'Women', 'Men',"New!","Classic","About","Help"];
               </Button>
             ))}
           </Box>
-         <div className='text-black flex text-xl  gap-6 xl:gap-12 justify-end items-center md:ml-[8vw] 2xl:ml-[12vw]'>
+         <div className='text-black flex text-xl  gap-6 xl:gap-12 justify-end items-center md:ml-[8vw] 2xl:w-[20vw]'>
                     <Link to="/"><BsSearch className='text-xl md:block hidden'/></Link>
                    <Link to="/login">
                     <IoPersonOutline className='text-xl md:block hidden'/>
@@ -116,9 +116,6 @@ const navItems = [ 'Women', 'Men',"New!","Classic","About","Help"];
         >
           {drawer}
         </Drawer>
-      </Box>
-      <Box component="main" >
-        <Toolbar />
       </Box>
     </div>
   );

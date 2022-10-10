@@ -8,11 +8,11 @@ const Carousel = () => {
   const data = useSelector((store) => store.products);
   const slideLeft = () => {
     let elem = document.getElementById("slider");
-    elem.scrollLeft = elem.scrollLeft - 400;
+    elem.scrollLeft = elem.scrollLeft - window.innerWidth;
   };
   const slideRight = () => {
     let elem = document.getElementById("slider");
-    elem.scrollLeft = elem.scrollLeft + 400;
+    elem.scrollLeft = elem.scrollLeft + window.innerWidth;
   };
   return (
     <div className="p-2 md:p-12 ">

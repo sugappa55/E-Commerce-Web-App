@@ -17,6 +17,15 @@ let reviews=[
         title:"They feel comfortable all day long",
         author:"Bharat Jain",
         designation:"Teacher,Sara Pre-school"
+    },{
+        title:"Feels like wearing a T-shirt on my feet",
+        author:"Ajinkya Malasane",
+        designation:"Co-founder,Playment"
+    },
+    {
+        title:"They feel comfortable all day long",
+        author:"Bharat Jain",
+        designation:"Teacher,Sara Pre-school"
     }
 ]
 
@@ -26,8 +35,8 @@ const Reviews = () => {
        <h2 className='text-3xl font-semibold text-center p-4'>CUSTOMER REVIEWS</h2>
        <div className="overflow-x-scroll whitespace-nowrap scrollbar-hide">
             {
-                reviews.map(review=>(
-                    <div className="inline-block p-4 my-2 mx-4 text-center" key={review.title}>
+                reviews.map((review,index)=>(
+                    <div className="inline-block p-4 my-2 mx-4 text-center" key={index}>
                         <Rating value={5} readOnly style={{color:"#d3b38b"}}/>
                         <h2 className='text-xl font-semibold '>{review.title}</h2>
                         <p>-{review.author}</p>

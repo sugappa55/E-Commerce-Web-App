@@ -57,7 +57,7 @@ const SlideShow = () => {
         {Images.map((slideImage, index) => (
           <div className="each-slide " key={index}>
             <div className="flex gap-1 flex-col md:flex-row xs:flex">
-              <div className="flex-1 w-[100%] md:h-[500px] h-[300px]">
+              <div className="flex-1 w-[100%] md:h-[500px] xl:h-[650px] h-[300px]">
                 <img
                   src={slideImage.src}
                   alt="images"
@@ -70,7 +70,7 @@ const SlideShow = () => {
               >
                 <div>
                   {index ? (
-                    <div className="p-2">
+                    <div className="p-6">
                       <p className="font-bold text-lg">{slideImage.heading}</p>
                       <p className="font-bold text-2xl md:text-4xl">
                         {slideImage.sub_heading}
@@ -83,7 +83,7 @@ const SlideShow = () => {
                       </button>
                     </div>
                   ) : (
-                    <div className=" p-2 md:p-8 text-white">
+                    <div className="p-6 md:p-8 text-white">
                       <p className="font-bold text-2xl md:text-4xl">
                         {slideImage.heading}
                       </p>

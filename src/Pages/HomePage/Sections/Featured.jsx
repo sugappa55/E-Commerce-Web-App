@@ -20,7 +20,7 @@ const Featured = () => {
                 {
                     featuredImages.map(img=>
                         <div key={img}>
-                            <img src={img} alt={img} className="w-36 h-36 md:h-32 md:w-32 lg:h-40 lg:w-40"/>
+                            <img src={img} alt={img} className="w-36 h-36 md:h-32 md:w-32 lg:h-40 lg:w-40 2xl:w-60 2xl:h-60"/>
                         </div>
                         )
                 }
